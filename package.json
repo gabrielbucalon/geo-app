@@ -1,0 +1,15 @@
+{
+  "name": "geo-app",
+  "version": "1.0.0",
+  "description": "Sistema para cadastrar e buscar pontos",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gabriel bucalon e gabriel viegas",
+  "license": "MIT",
+  "dependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
