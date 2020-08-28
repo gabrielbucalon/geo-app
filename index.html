@@ -5,6 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geo App</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyC1gPzb2BNuLbkLkyNGd4Nvgiv6nvjxqSQ",
+            authDomain: "geo-app-92d12.firebaseapp.com",
+            databaseURL: "https://geo-app-92d12.firebaseio.com",
+            projectId: "geo-app-92d12",
+            storageBucket: "geo-app-92d12.appspot.com",
+            messagingSenderId: "520952220109",
+            appId: "1:520952220109:web:8f68a68b6e6f99a5591c84",
+            measurementId: "G-Z17TF6QT62"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
 </head>
 
 <body>
