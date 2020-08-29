@@ -1,0 +1,15 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+footer {
+  display: flex;
+  background-color: #f8f9fa;
+  justify-content: center;
+  justify-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
