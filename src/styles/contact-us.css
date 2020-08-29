@@ -1,0 +1,19 @@
+main section {
+  display: flex;
+  justify-items: center;
+}
+
+main section .card .card-body,
+.row .btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2em;
+}
+
+main section .card .card-body .btns .btn-outline-danger {
+  margin-left: 0.3em;
+}
+
+main section .card .card-body .comments {
+  margin-top: 1em;
+}
