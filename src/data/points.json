@@ -1,42 +1,72 @@
 [
   {
     "lat": -22.923665,
-    "lng": -47.1183
+    "lng": -47.1183,
+    "nome do local": "Casa de Cultura Fazenda Roseira",
+    "telefone": "19 99134-3922",
+    "img": "../assets/local1.png"
   },
   {
     "lat": -22.913631,
-    "lng": -47.114155
+    "lng": -47.114155,
+    "nome do local": "Casa de Cultura Tainã",
+    "telefone": "19 3228-2993", 
+    "img": "../assets/local2.png"
   },
   {
     "lat": -22.90844,
-    "lng": -47.117123
+    "lng": -47.117123,
+    "nome do local": "Instituto Baobá de Cultura e Arte - Ponto de Cultura e Memória Ibaô",
+    "telefone": "19 3342-5911", 
+    "img": "../assets/local3.png"
   },
   {
     "lat": -22.904587,
-    "lng": -47.083831
+    "lng": -47.083831,
+    "nome do local": "Urucungos Puítas E Quijengues",
+    "telefone": "19 98106-6901", 
+    "img": "../assets/local4.png"
   },
   {
     "lat": -22.939862,
-    "lng": -47.115183
+    "lng": -47.115183,
+    "nome do local": "CEI Orlando Ferreira da Costa",
+    "telefone": "19 3269-4458", 
+    "img": "../assets/local5.png"
   },
   {
     "lat": -22.894895,
-    "lng": -47.058253
+    "lng": -47.058253,
+    "nome do local": "Largo Santa Cruz",
+    "telefone": "", 
+    "img": "../assets/local6.png"
   },
   {
     "lat": -22.911371,
-    "lng": -47.078471
-  },
-  {
-    "lat": -22.913593,
-    "lng": -47.113952
+    "lng": -47.078471,
+    "nome do local": "Clube Machadinho",
+    "telefone": "", 
+    "img": "../assets/local7.png"
   },
   {
     "lat": -23.545785,
-    "lng": -46.634564
+    "lng": -46.634564,
+    "nome do local": "Praça Antônio Prado",
+    "telefone": "", 
+    "img": "../assets/local8.png"
   },
   {
-    "lat": -22.911754,
-    "lng": -47.053322
+    "lat": -23.5838412,
+    "lng": -46.6591974,
+    "nome do local": "Museu Afro Brasil",
+    "telefone": "113320-8900", 
+    "img": "../assets/local9.png"
+  },
+  {
+    "lat": -23.5297277,
+    "lng": -46.6423533,
+    "nome do local": "Ilu Oba de Min Educação Cultura e Arte Negra",
+    "telefone": "113222-5566", 
+    "img": "../assets/local10.png"
   }
 ]
