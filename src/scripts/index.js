@@ -1,32 +1,54 @@
 let map;
 let points = [];
 let pointFound;
+let infowindow;
 
 async function initMap() {
   points = await getPoints();
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 15,
+
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 8,
     center: { lat: points[0].lat, lng: points[0].lng },
   });
 
-  var image =
+  let image =
     "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
-  debugger;
+
+  infowindow = new google.maps.InfoWindow();
   if (pointFound) {
-    var beachMarker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
       position: { lat: pointFound.lat, lng: pointFound.lng },
       map: map,
       icon: image,
     });
+    setWindow(marker, pointFound);
   } else {
     points.forEach((element) => {
-      var beachMarker = new google.maps.Marker({
+      let marker = new google.maps.Marker({
         position: { lat: element.lat, lng: element.lng },
         map: map,
         icon: image,
       });
+      setWindow(marker, element);
     });
   }
+}
+
+function setWindow(marker, element) {
+  google.maps.event.addListener(marker, "click", function (e) {
+    infowindow.setContent(
+      `<h3> ${element.name} </h3><br>
+      ${
+        element.cellphone
+          ? `<span style = font-size: '14pt;
+      font-weight: 700;'> ${element.cellphone} </span><br>`
+          : ``
+      } 
+       <img src=${element.img} alt=${element.name}></img>
+      `
+    );
+    infowindow.open(map, marker);
+  });
 }
 
 function getPoints() {
