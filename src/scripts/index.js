@@ -37,11 +37,11 @@ async function initMap() {
 function setWindow(marker, element) {
   google.maps.event.addListener(marker, "click", function (e) {
     infowindow.setContent(
-      `<h3> ${element.name} </h3><br>
+      `<h3>Nome: ${element.name} </h3><br>
       ${
         element.cellphone
-          ? `<span style = font-size: '14pt;
-      font-weight: 700;'> ${element.cellphone} </span><br>`
+          ? `<h5 style = font-size: '14pt;
+      font-weight: 700;'>Telefone: ${element.cellphone} </h5><br>`
           : ``
       } 
        <img src=${element.img} alt=${element.name}></img>
