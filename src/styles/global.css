@@ -14,6 +14,10 @@ body {
   width: 100vw;
 }
 
+.image-modal-information {
+  margin-top: 10px;
+}
+
 .carousel img {
   height: 35vh;
   width: 100vw;

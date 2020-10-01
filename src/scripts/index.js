@@ -47,12 +47,15 @@ function setWindow(marker, element, index) {
           ? `<h5 style = font-size: '14pt;
       font-weight: 700;'>Telefone: ${element.cellphone} </h5><br>`
           : ``
-      } 
-       <img src=${element.img} alt=${element.name}></img>
-       <br> ` +
-        ' <button class="btn btn-success my-2 my-sm-0" onclick="favoriteOrDisfavor(' +
-        index +
-        ')">Favoritar</button> '
+      } <br>
+      <h5 style = font-size: '14pt; font-weight: 700;'> Inauguração: ${
+        element.opening
+      } </h5> <br>
+      <button class="btn btn-success my-2 my-sm-0" onclick="favoriteOrDisfavor(${index})">Favoritar</button>
+       <img class="image-modal-information" src=${element.img} alt=${
+        element.name
+      }></img>
+       `
     );
     infowindow.open(map, marker);
   });
