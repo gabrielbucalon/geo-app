@@ -51,8 +51,10 @@ function setWindow(marker, element) {
   });
 }
 
-function getPoints() {
-  return fetch("src/data/points.json").then((response) => response.json());
+async function getPoints() {
+  return await fetch("src/data/points.json").then((response) =>
+    response.json()
+  );
 }
 
 function searchPoints() {
