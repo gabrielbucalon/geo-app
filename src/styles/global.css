@@ -11,10 +11,12 @@ body {
 
 .carousel {
   height: 35vh;
+  width: 100vw;
 }
 
 .carousel img {
   height: 35vh;
+  width: 100vw;
 }
 
 footer {
