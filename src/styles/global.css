@@ -9,6 +9,20 @@ body {
   height: 90vh;
 }
 
+.carousel {
+  height: 35vh;
+  width: 100vw;
+}
+
+.image-modal-information {
+  margin-top: 10px;
+}
+
+.carousel img {
+  height: 35vh;
+  width: 100vw;
+}
+
 footer {
   display: flex;
   background-color: #f8f9fa;

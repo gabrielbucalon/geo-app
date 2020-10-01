@@ -6,6 +6,10 @@ let infowindow;
 async function initMap() {
   points = await getPoints();
 
+  points.map((point) => {
+    point.favorite = false;
+  });
+
   map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
     center: { lat: points[0].lat, lng: points[0].lng },
@@ -23,18 +27,18 @@ async function initMap() {
     });
     setWindow(marker, pointFound);
   } else {
-    points.forEach((element) => {
+    points.forEach((element, index) => {
       let marker = new google.maps.Marker({
         position: { lat: element.lat, lng: element.lng },
         map: map,
         icon: image,
       });
-      setWindow(marker, element);
+      setWindow(marker, element, index);
     });
   }
 }
 
-function setWindow(marker, element) {
+function setWindow(marker, element, index) {
   google.maps.event.addListener(marker, "click", function (e) {
     infowindow.setContent(
       `<h3>Nome: ${element.name} </h3><br>
@@ -43,16 +47,31 @@ function setWindow(marker, element) {
           ? `<h5 style = font-size: '14pt;
       font-weight: 700;'>Telefone: ${element.cellphone} </h5><br>`
           : ``
-      } 
-       <img src=${element.img} alt=${element.name}></img>
-      `
+      } <br>
+      <h5 style = font-size: '14pt; font-weight: 700;'> Inauguração: ${
+        element.opening
+      } </h5> <br>
+      <button class="btn btn-success my-2 my-sm-0" onclick="favoriteOrDisfavor(${index})">Favoritar</button>
+       <img class="image-modal-information" src=${element.img} alt=${
+        element.name
+      }></img>
+       `
     );
     infowindow.open(map, marker);
   });
 }
 
-function getPoints() {
-  return fetch("src/data/points.json").then((response) => response.json());
+function favoriteOrDisfavor(index) {
+  points[index].favorite = !points[index].favorite;
+  points[index].favorite
+    ? alert("Favoritado com sucesso :)")
+    : alert("desfavoritado com sucesso :(");
+}
+
+async function getPoints() {
+  return await fetch("src/data/points.json").then((response) =>
+    response.json()
+  );
 }
 
 function searchPoints() {
