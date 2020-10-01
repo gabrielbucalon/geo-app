@@ -9,6 +9,14 @@ body {
   height: 90vh;
 }
 
+.carousel {
+  height: 35vh;
+}
+
+.carousel img {
+  height: 35vh;
+}
+
 footer {
   display: flex;
   background-color: #f8f9fa;
