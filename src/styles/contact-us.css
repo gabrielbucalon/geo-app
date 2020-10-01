@@ -1,6 +1,18 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main section {
   display: flex;
   justify-items: center;
+  align-items: center;
+}
+
+.card-header {
+  font-size: 16pt;
+  font-weight: 700;
 }
 
 main section .card .card-body,
