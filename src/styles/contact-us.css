@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+}
+
 .header-contact-us {
   margin-bottom: 5em;
 }
@@ -30,4 +34,14 @@ main section .card .card-body .btns .btn-outline-danger {
 
 main section .card .card-body .comments {
   margin-top: 1em;
+}
+
+footer {
+  display: flex;
+  background-color: #f8f9fa;
+  justify-content: center;
+  justify-items: center;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
 }
