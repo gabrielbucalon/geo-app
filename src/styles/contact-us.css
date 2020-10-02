@@ -2,6 +2,10 @@
   margin-bottom: 5em;
 }
 
+.content-card .card {
+  justify-content: center;
+}
+
 main section {
   display: flex;
   justify-items: center;
