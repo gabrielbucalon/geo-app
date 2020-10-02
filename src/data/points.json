@@ -5,7 +5,10 @@
     "name": "Casa de Cultura Fazenda Roseira",
     "cellphone": "19 99134-3922",
     "img": "src/assets/local1.png",
-    "opening": "2011"
+    "opening": "2011",
+    "street": "Domingos Haddad",
+    "city": "Campinas",
+    "neighborhood": "Residencial Parque da Fazenda"
   },
   {
     "lat": -22.913631,
@@ -13,7 +16,10 @@
     "name": "Casa de Cultura Tainã",
     "cellphone": "19 3228-2993",
     "img": "src/assets/local2.png",
-    "opening": "2006"
+    "opening": "2006",
+    "street": "Inhambu",
+    "city": "Campinas",
+    "neighborhood": "Vila Padre Manoel de Nobrega"
   },
   {
     "lat": -22.90844,
@@ -21,7 +27,10 @@
     "name": "Instituto Baobá de Cultura e Arte - Ponto de Cultura e Memória Ibaô",
     "cellphone": "19 3342-5911",
     "img": "src/assets/local3.png",
-    "opening": "2009"
+    "opening": "2009",
+    "street": "Ema",
+    "city": "Campinas",
+    "neighborhood": "Vila Padre Manoel de Nobrega"
   },
   {
     "lat": -22.904587,
@@ -29,7 +38,10 @@
     "name": "Urucungos Puítas E Quijengues",
     "cellphone": "19 98106-6901",
     "img": "src/assets/local4.png",
-    "opening": "2011"
+    "opening": "2011",
+    "street": "Salvador Lombardi Neto",
+    "city": "Campinas",
+    "neighborhood": "Vila Nova Teixeira"
   },
   {
     "lat": -22.939862,
@@ -37,7 +49,10 @@
     "name": "CEI Orlando Ferreira da Costa",
     "cellphone": "19 3269-4458",
     "img": "src/assets/local5.png",
-    "opening": "2001"
+    "opening": "2001",
+    "street": "São Benedito",
+    "city": "Campinas",
+    "neighborhood": "Jardim Santa Lúcia"
   },
   {
     "lat": -22.894895,
@@ -45,7 +60,10 @@
     "name": "Largo Santa Cruz",
     "cellphone": "19 79096-6991",
     "img": "src/assets/local6.png",
-    "opening": "2006"
+    "opening": "2006",
+    "street": "Santa Cruz",
+    "city": "Campinas",
+    "neighborhood": "Cambuí"
   },
   {
     "lat": -22.911371,
@@ -53,7 +71,10 @@
     "name": "Clube Machadinho",
     "cellphone": "19 58969-3268",
     "img": "src/assets/local7.png",
-    "opening": "2002"
+    "opening": "2002",
+    "street": "Cerqueira",
+    "city": "Campinas",
+    "neighborhood": "Vila Industrial"
   },
   {
     "lat": -23.545785,
@@ -61,7 +82,10 @@
     "name": "Praça Antônio Prado",
     "cellphone": "19 63884-5505",
     "img": "src/assets/local8.png",
-    "opening": "2015"
+    "opening": "2015",
+    "street": "Antônio Prado Júnior",
+    "city": "Campinas",
+    "neighborhood": "Jardim Yeda"
   },
   {
     "lat": -23.5838412,
@@ -69,7 +93,10 @@
     "name": "Museu Afro Brasil",
     "cellphone": "113320-8900",
     "img": "src/assets/local9.png",
-    "opening": "2014"
+    "opening": "2014",
+    "street": "Pedro Álvares Cabral",
+    "city": "São Paulo",
+    "neighborhood": "Vila Mariana"
   },
   {
     "lat": -23.5297277,
@@ -77,6 +104,9 @@
     "name": "Ilu Oba de Min Educação Cultura e Arte Negra",
     "cellphone": "113222-5566",
     "img": "src/assets/local10.png",
-    "opening": "2000"
+    "opening": "2000",
+    "street": "Anhaia",
+    "city": "São Paulo",
+    "neighborhood": "Bom Retiro"
   }
 ]
