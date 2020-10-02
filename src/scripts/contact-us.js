@@ -4,9 +4,9 @@ const submitForm = () => {
   const comment = document.getElementById("comment").value;
 
   if (validForm({ name, email, comment })) {
-    alert("mensagem enviada com sucesso");
+    alert("mensagem enviada com sucesso.");
   } else {
-    alert("Ooops, todos os campos");
+    alert("Ooops, todos os campos são obrigatórios.");
   }
 };
 
