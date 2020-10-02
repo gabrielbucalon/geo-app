@@ -1,6 +1,6 @@
 let map;
 let points = [];
-let pointFound;
+let pointFound = [];
 let infowindow;
 
 async function initMap() {
@@ -19,23 +19,15 @@ async function initMap() {
     "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
 
   infowindow = new google.maps.InfoWindow();
-  if (pointFound) {
+
+  points.forEach((element, index) => {
     let marker = new google.maps.Marker({
-      position: { lat: pointFound.lat, lng: pointFound.lng },
+      position: { lat: element.lat, lng: element.lng },
       map: map,
       icon: image,
     });
-    setWindow(marker, pointFound);
-  } else {
-    points.forEach((element, index) => {
-      let marker = new google.maps.Marker({
-        position: { lat: element.lat, lng: element.lng },
-        map: map,
-        icon: image,
-      });
-      setWindow(marker, element, index);
-    });
-  }
+    setWindow(marker, element, index);
+  });
 }
 
 function setWindow(marker, element, index) {
@@ -75,9 +67,51 @@ async function getPoints() {
 }
 
 function searchPoints() {
+  pointFound = [];
   let valueSearch = document.getElementById("search").value;
+  if (valueSearch === "") {
+    initMap();
+  } else {
+    points.forEach((point) => {
+      if (
+        String(point.name).toLowerCase() ===
+          String(valueSearch).toLowerCase() ||
+        String(point.street).toLowerCase() ===
+          String(valueSearch).toLowerCase() ||
+        String(point.city).toLowerCase() ===
+          String(valueSearch).toLowerCase() ||
+        String(point.neighborhood).toLowerCase() ===
+          String(valueSearch).toLowerCase()
+      ) {
+        pointFound.push(point);
+      }
+    });
 
-  pointFound = points.find((point) => point.name === valueSearch);
+    if (pointFound.length === 0) {
+      initMap();
+    } else {
+      mountedMarkersToSearch();
+    }
+  }
+}
 
-  initMap();
+function mountedMarkersToSearch() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 8,
+    center: { lat: pointFound[0].lat, lng: pointFound[0].lng },
+  });
+
+  let image =
+    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+
+  infowindow = new google.maps.InfoWindow();
+
+  pointFound.forEach((element, index) => {
+    let marker = new google.maps.Marker({
+      position: { lat: element.lat, lng: element.lng },
+      map: map,
+      icon: image,
+    });
+    setWindow(marker, element, index);
+  });
 }
