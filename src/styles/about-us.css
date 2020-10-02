@@ -1,7 +1,3 @@
-.divider {
-  border: 1px solid grey;
-}
-
 header {
   margin-bottom: 5em;
 }
@@ -46,4 +42,19 @@ header {
 .lead .fa-bootstrap {
   color: purple;
   margin-left: 1em;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us .jumbotron-about-us {
+  width: 90vw;
+}
+
+.about-us .jumbotron-about-us .lead img {
+  width: 20vw;
+  height: 30vh;
+  border-radius: 10em;
 }
