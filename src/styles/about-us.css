@@ -1,3 +1,49 @@
 .divider {
   border: 1px solid grey;
 }
+
+header {
+  margin-bottom: 5em;
+}
+
+.about-project {
+  display: flex;
+  justify-content: center;
+}
+
+.about-project .jumbotron-about-the-project {
+  width: 90vw;
+}
+
+.lead {
+  margin-bottom: 2em;
+}
+
+.lead .subject {
+  font-weight: 800;
+  font-size: 14pt;
+}
+
+.lead i {
+  font-size: 5rem;
+}
+
+.lead .fa-html5 {
+  color: orangered;
+  margin-left: 1em;
+}
+
+.lead .fa-css3-alt {
+  color: dodgerblue;
+  margin-left: 1em;
+}
+
+.lead .fa-js {
+  color: yellow;
+  margin-left: 1em;
+}
+
+.lead .fa-bootstrap {
+  color: purple;
+  margin-left: 1em;
+}

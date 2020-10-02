@@ -7,24 +7,87 @@
     <title>Geo App</title>
     <link rel="stylesheet" href="../styles/about-us.css">
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/50c2c9b08d.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Sobre nós</h1>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="/index.html">Geo App</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/src/pages/contact-us.html">Fale conosco <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/src/pages/about-us.html">sobre o projeto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <h2>Gabriel Bucalon</h2>
-    <ul>
-        <li>Graduando IFSP CAMPINAS</li>
-        <li>Mora em Hortolândia</li>
-        <li>Jogos, músicas e viagens</li>
-    </ul>
+    <main>
 
-    <div class="divider"></div>
+        <section class="about-project">
+            <div class="jumbotron jumbotron-fluid jumbotron-about-the-project">
+                <div class="container">
+                    <h1 class="display-4">Informações sobre o projeto</h1>
 
-    <h2>Gabriel Viegas</h2>
-    <ul>
-        <li>Adicione suas coisas aqui, Gabriel.</li>
-    </ul>
+                    <p class="lead">
+                        <span class="subject">Tema:</span> Pontos que lembram a cultura negra em Campinas e São Paulo.
+                        Pontos culturais foram procurados pelo google, utilizando google maps e pesquisas diretas pelo
+                        google na tentativa de achar mais informações sobre o local. Como inauguração, rua, nome e etc.
+                    </p>
+
+                    <p class="lead">
+                        <span class="subject">Ferramentas :</span> <i class="fab fa-html5"></i> <i
+                            class="fab fa-css3-alt"></i><i class="fab fa-js"></i><i class="fab fa-bootstrap"></i>
+                    </p>
+
+                    <p class="lead">
+                        <span class="subject">Tarefas : </span>
+                        As tarefas foram adicionadas no issues do repositório do Github. Com um título e uma descrição
+                        que a pessoa possa entender. Também deixando a pessoa confortavel de escolher que tarefa pegar.
+                    </p>
+
+                    <p class="lead">
+                        <span class="subject">Como foi andamento do projeto?</span>
+                        Criamos um repositório no Github. A partir da <code>master</code> Criávamos uma branch, ao
+                        terminar a tarefa criávamos <code>Pull Request</code>. Assim aguardando pull request ser
+                        aprovado pelo reviewers.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h1>Sobre nós</h1>
+
+            <h2>Gabriel Bucalon</h2>
+            <ul>
+                <li>Graduando IFSP CAMPINAS</li>
+                <li>Mora em Hortolândia</li>
+                <li>Jogos, músicas e viagens</li>
+            </ul>
+
+            <div class="divider"></div>
+
+            <h2>Gabriel Viegas</h2>
+            <ul>
+                <li>Adicione suas coisas aqui, Gabriel.</li>
+            </ul>
+        </section>
+    </main>
+
 </body>
 
 </html>
